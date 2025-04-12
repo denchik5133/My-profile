@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Developer Portfolio</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon"/>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Background container -->
+    <div class="background-container">
+        <div class="noise-overlay"></div>
+        <div id="particles-container" class="particles-container"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img id="site-logo" src="" alt="Logo" class="logo">
+            </div>
+            <div class="avatar-container">
+                <img id="user-avatar" src="" alt="Developer Avatar" class="avatar">
+            </div>
+        </header>
+        
+        <!-- Hero section -->
+        <section class="hero">
+            <h1 id="nickname" class="hero-title" data-text="denchik">denchik</h1>
+            <div class="typing-container">
+                <span id="typing-text" class="typing-text"></span>
+                <span class="cursor"></span>
+            </div>
+            <p id="hero-description" class="hero-description">
+                
+            </p>
+            <div id="social-icons" class="social-icons">
+                <!-- Social links will be dynamically inserted here -->
+            </div>
+        </section>
+        
+        <!-- About section -->
+        <section class="section" id="about">
+            <h2 class="section-title"><i class="fas fa-user-alt"></i>About Me</h2>
+            <div class="section-content">
+                <div id="about-content" class="about-content">
+                    <!-- About content will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="container section">
+            <h2 class="section-title"><i class="fas fa-code"></i>Skills</h2>
+            <div class="section-content">
+                <div id="skills-container" class="skills-container">
+                    <!-- Skills will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Games section -->
+        <section class="section" id="games">
+            <h2 class="section-title"><i class="fas fa-gamepad"></i>Games I Play</h2>
+            <div class="section-content">
+                <div id="games-grid" class="games-grid">
+                    <!-- Games will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p id="footer-text"></p>
+        </footer>
+    </div>
+    
+    <!-- Project Demo Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Project Demo</h3>
+                <button class="modal-close-btn" id="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background controls -->
+    <div class="bg-controls">
+        <button class="bg-control-btn" id="toggle-theme" title="Change Color Theme">
+            <i class="fas fa-palette"></i>
+        </button>
+    </div>
+
+    <!-- Configuration script -->
+    <script src="js/config.js"></script>
+    <!-- Highlight.js for code syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Main script -->
+    <script src="js/main.js"></script>
+    <!-- Background effects script -->
+    <script src="js/background.js"></script>
+</body>
+</html>
